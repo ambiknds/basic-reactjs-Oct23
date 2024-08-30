@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient-g-b{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,28,1) 36%, rgba(0,212,255,1) 100%);
+}
+.bg-gradient-b-b{
+  background: rgb(8,7,24);
+  background: linear-gradient(90deg, rgba(8,7,24,1) 0%, rgba(25,70,79,1) 36%, rgba(44,91,98,1) 94%, rgba(24,61,68,1) 97%, rgba(30,89,101,1) 100%);
+}
+.flip-card{
+  perspective: 1000px;
+}
+.flip-card-inner{
+  transition: transform 0.6s;
+  transform-style:preserve-3d;
+}
+.flip-card-front, .flip-card-back{
+  position: absolute;
+  backface-visibility: hidden;
+}
+.flip-card-back{
+  transform: rotateY(180deg);
+}
